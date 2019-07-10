@@ -1,6 +1,6 @@
 {
   "name": "cuuid",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Non-standard `datetime + random` UUID. `8-4-4-4-12` format same as UUID.",
   "main": "dist/cuuid",
   "scripts": {
