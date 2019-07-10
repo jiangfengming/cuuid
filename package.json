@@ -2,11 +2,18 @@
   "name": "cuuid",
   "version": "0.2.1",
   "description": "Non-standard `datetime + random` UUID. `8-4-4-4-12` format same as UUID.",
-  "main": "dist/cuuid.js",
+  "main": "dist/cuuid",
+  "scripts": {
+    "build": "rollup -c rollup.config.esm.js && rollup -c rollup.config.cjs.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jiangfengming/cuuid.git"
   },
+  "keywords": [
+    "UUID",
+    "GUID"
+  ],
   "author": "Jiang Fengming <jiangfengming87@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -14,13 +21,13 @@
   },
   "homepage": "https://github.com/jiangfengming/cuuid#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-config-enough": "^0.3.4",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3"
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-enough": "^0.3.5",
+    "rollup": "^1.16.7",
+    "rollup-plugin-babel": "^4.3.3"
   },
   "babel": {
     "presets": [
@@ -38,12 +45,5 @@
     "env": {
       "browser": true
     }
-  },
-  "scripts": {
-    "build": "rollup -c rollup.config.esm.mjs && rollup -c rollup.config.umd.mjs"
-  },
-  "keywords": [
-    "UUID",
-    "GUID"
-  ]
+  }
 }
